@@ -32,13 +32,13 @@ const infoPoints = [
 
 export const InfoWrapperSection = (): JSX.Element => {
   return (
-    <section className="flex flex-wrap md:flex-nowrap items-center gap-8 p pl-[158px] pr-[72px] py-[60px] w-full max-[1100px]:pl-[50px] max-[1100px]:pr-[50px] max-[680px]:pr-[25px] max-[680px]:pl-[25px] max-[1000px]:py-[40px]">
-      <div    className="w-full md:w-1/2 w-[550px] h-[350px] md:h-[549px] rounded-[20px] bg-cover bg-center bg-no-repeat max-[1000px]:hidden"
+    <section className="flex flex-wrap justify-center md:flex-nowrap items-center gap-8 p pl-[158px] pr-[72px] py-[60px] w-full max-[1100px]:pl-[50px] max-[1100px]:pr-[50px] max-[680px]:pr-[25px] max-[680px]:pl-[25px] max-[1000px]:py-[40px]">
+      <div    className=" md:w-1/2 w-[550px] h-[350px] md:h-[549px] rounded-[20px] bg-cover bg-center bg-no-repeat max-[1000px]:hidden"
         style={{ backgroundImage: "url(../img.png)" }}
         aria-label="Information section image"
       />
 
-      <div className="flex flex-col w-full  w-[550px] items-start gap-7 max-[1100px]:gap-5 max-[1000px]:w-[100%]">
+      <div className="flex flex-col w-full  max-w-[550px] items-start gap-7 max-[1100px]:gap-5 max-[1000px]:w-[100%]">
         {infoPoints.map((point, index) => (
           <Card
             key={index}
